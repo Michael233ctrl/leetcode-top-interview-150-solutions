@@ -9,7 +9,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Progress-0%20/%20150-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-3572A5?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
 ---
@@ -17,6 +16,7 @@
 # 📘 **LeetCode Top Interview 150 — Solutions & Notes**
 
 This repository contains my structured solutions to the **LeetCode Top Interview 150**.
+
 My goals with this project:
 
 * Build strong fundamentals across arrays, hashing, DP, trees, graphs, and more.
@@ -29,12 +29,12 @@ My goals with this project:
 ## 🚀 **Progress**
 
 | Category         | Completed | Total |
-| ---------------- | --------- | ----- |
+| ---------------- |-----------| ----- |
 | Array / String   | 0         | 27    |
 | Two Pointers     | 0         | 11    |
 | Sliding Window   | 0         | 7     |
 | Matrix           | 0         | 10    |
-| Hashmap          | 0         | 8     |
+| Hashmap          | 1         | 8     |
 | Intervals        | 0         | 6     |
 | Stack            | 0         | 13    |
 | Linked List      | 0         | 11    |
@@ -73,6 +73,13 @@ My goals with this project:
  ┣ 📂 math
  ┗ 📄 README.md
 ```
+
+## ✅ **Solved Problems**
+
+<!-- START_SOLVED_TABLE -->
+<!-- END_SOLVED_TABLE -->
+
+---
 
 ---
 

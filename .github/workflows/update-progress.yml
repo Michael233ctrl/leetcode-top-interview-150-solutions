@@ -3,31 +3,38 @@ name: Update Progress
 on:
   push:
     branches: [ main ]
+    paths:
+      - "**/*.py"
+      - "README.md"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update:
+  update-progress:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
-      - name: Run progress updater
-        run: python update_progress.py
-
-      - name: Commit changes
+      - name: Install dependencies
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          python -m pip install --upgrade pip
+
+      - name: Run update script
+        run: |
+          python update_progress.py
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update progress badge"
-            git push
-          fi
+          git commit -m "Auto-update progress" || echo "No changes to commit"
+          git push
