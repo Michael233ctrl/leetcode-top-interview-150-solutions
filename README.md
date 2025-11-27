@@ -8,14 +8,9 @@
 </p>
 
 <p align="center">
-  <!-- Dynamic progress badge -->
-  ![progress](https://img.shields.io/badge/Progress-0%20/%20150-brightgreen?style=for-the-badge)
+  <img src="https://img.shields.io/badge/Progress-0%20/%20150-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3572A5?style=for-the-badge&logo=python&logoColor=white" />
 </p>
-
-<p align="center">
-  ![Python](https://img.shields.io/badge/Python-3572A5?style=for-the-badge&logo=python&logoColor=white)
-</p>
-
 
 ---
 
