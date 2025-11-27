@@ -63,22 +63,19 @@ def scan_solutions():
     return solved
 
 
-def build_progress_table(solved):
-    """Generate markdown table of solved problems."""
+def build_category_progress_table(solved):
     rows = [
-        "| # | Title | Category | File |",
-        "|---|--------|----------|------|"
+        "| Category | Completed | Total |",
+        "|----------|-----------|-------|"
     ]
 
-    for category, problems in solved.items():
-        for num, title, file in problems:
-            # Normalize link path for GitHub
-            link = str(file).replace("\\", "/")
-            rows.append(
-                f"| {num} | {title} | {category} | [{file.name}]({link}) |"
-            )
+    for category, total in CATEGORIES.items():
+        completed = len(solved[category])
+        name = category.replace("_", " ").title()
+        rows.append(f"| {name} | {completed} | {total} |")
 
     return "\n".join(rows)
+
 
 
 def update_readme(solved):
@@ -95,38 +92,11 @@ def update_readme(solved):
 
     content = re.sub(badge_pattern, lambda m: badge_repl, content)
 
-    # --- Update category progress numbers ---
-    for category, total in CATEGORIES.items():
-        solved_count = len(solved[category])
-
-        # Category name in README is title case with spaces
-        readme_category_name = category.replace("_", " ").title()
-
-        # Matches the "| Category Name | X |" cell
-        pattern = (
-            rf"(\|\s*{re.escape(readme_category_name)}\s*\|\s*)"
-            r"\d+(\s*\|)"
-        )
-        repl = rf"\1{solved_count}\2"
-
-        # Use lambda to avoid backreference confusion
-        content = re.sub(pattern, lambda m: repl, content)
-
-    # --- Replace solved problems table ---
-    solved_table = build_progress_table(solved)
-
-    table_pattern = (
-        r"<!-- START_SOLVED_TABLE -->.*?<!-- END_SOLVED_TABLE -->"
-    )
-    table_repl = (
-        f"<!-- START_SOLVED_TABLE -->\n"
-        f"{solved_table}\n"
-        f"<!-- END_SOLVED_TABLE -->"
-    )
+    category_table = build_category_progress_table(solved)
 
     content = re.sub(
-        table_pattern,
-        lambda m: table_repl,
+        r"(## 🚀 \*\*Progress\*\*.*?\n)(\|.*?\|.*?\n)+",
+        lambda m: m.group(1) + category_table + "\n",
         content,
         flags=re.DOTALL
     )
