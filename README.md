@@ -16,9 +16,7 @@
 
 # 📘 **LeetCode Top Interview 150 — Solutions & Notes**
 
-This repository contains my structured solutions to the **LeetCode Top Interview 150** study plan.
-Each problem includes clean, interview-ready code, explanations, and (where helpful) multiple approaches.
-
+This repository contains my structured solutions to the **LeetCode Top Interview 150**.
 My goals with this project:
 
 * Build strong fundamentals across arrays, hashing, DP, trees, graphs, and more.
@@ -94,7 +92,7 @@ This helps both for interview prep and long-term retention.
 
 ## 🛠 **Languages & Tools**
 
-* **Primary Language:** (add yours — I can update the README for you)
+* **Primary Language:** Python
 * **Platform:** LeetCode
 * **Topics:** Data Structures, Algorithms, Interview Preparation
 
