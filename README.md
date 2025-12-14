@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Progress-2%20/%20150-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Progress-3%20/%20150-brightgreen?style=for-the-badge" />
 </p>
 
 ---
@@ -34,7 +34,7 @@ My goals with this project:
 | Two Pointers | 0 | 11 |
 | Sliding Window | 0 | 7 |
 | Matrix | 0 | 10 |
-| Hashmap | 2 | 8 |
+| Hashmap | 3 | 8 |
 | Intervals | 0 | 6 |
 | Stack | 0 | 13 |
 | Linked List | 0 | 11 |
