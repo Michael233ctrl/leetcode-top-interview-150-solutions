@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Progress-0%20/%20150-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Progress-2%20/%20150-brightgreen?style=for-the-badge" />
 </p>
 
 ---
@@ -28,25 +28,25 @@ My goals with this project:
 
 ## 🚀 **Progress**
 
-| Category         | Completed | Total |
-| ---------------- |-----------| ----- |
-| Array / String   | 0         | 27    |
-| Two Pointers     | 0         | 11    |
-| Sliding Window   | 0         | 7     |
-| Matrix           | 0         | 10    |
-| Hashmap          | 1         | 8     |
-| Intervals        | 0         | 6     |
-| Stack            | 0         | 13    |
-| Linked List      | 0         | 11    |
-| Trees            | 0         | 16    |
-| BST              | 0         | 8     |
-| Backtracking     | 0         | 7     |
-| Divide & Conquer | 0         | 4     |
-| Graph            | 0         | 10    |
-| DP               | 0         | 14    |
-| Greedy           | 0         | 8     |
-| Bit Manipulation | 0         | 4     |
-| Math             | 0         | 6     |
+| Category | Completed | Total |
+|----------|-----------|-------|
+| Array String | 0 | 27 |
+| Two Pointers | 0 | 11 |
+| Sliding Window | 0 | 7 |
+| Matrix | 0 | 10 |
+| Hashmap | 2 | 8 |
+| Intervals | 0 | 6 |
+| Stack | 0 | 13 |
+| Linked List | 0 | 11 |
+| Tree | 0 | 16 |
+| Bst | 0 | 8 |
+| Backtracking | 0 | 7 |
+| Divide And Conquer | 0 | 4 |
+| Graph | 0 | 10 |
+| Dynamic Programming | 0 | 14 |
+| Greedy | 0 | 8 |
+| Bit Manipulation | 0 | 4 |
+| Math | 0 | 6 |
 
 ---
 
